@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.8.1",
     "next": "12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,11 +17,11 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4"
+    "autoprefixer": "^10.4.8",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   },
   "main": "index.js"
 }

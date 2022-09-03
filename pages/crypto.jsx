@@ -18,7 +18,7 @@ const crypto = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Crypto App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h3>React JS / Redux Toolkit / Ant Design</h3>
         </div>
       </div>
 
@@ -28,21 +28,25 @@ const crypto = () => {
           <h2>Overview</h2>
           <p>
             I built this app to demonstrate knowledge working in React JS and
-            accessing API endpoints. This app was built using React JS and is
-            hosted on Firebase. This application supports user authentication
-            using firebase. Users are able to create a new account using their
-            email address and can then sign in to save coins to a user specific
-            list. This is made possble by creating a firestore cloud storage
-            database at the time of user registration. Another feature of this
-            application is dynamic routing through the &quot;React Router
-            DOM&quot; package. This application was built using the Coin Gecko
-            API.
+            accessing API endpoints using React Redux Toolkit. This app was
+            built using React JS and is hosted on Netlify. This application
+            supports user authentication using firebase. Users are able to
+            create a new account using their email address and can then sign in
+            to save coins to a user specific list. This is made possble by
+            creating a firestore cloud storage database at the time of user
+            registration. Another feature of this application is dynamic routing
+            through the &quot;React Router DOM&quot; package. This application
+            was built using the Rapidapi API.
           </p>
-          <a href="/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/JoBaHP/crypto-app"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
           <a
-            href="https://cryptobase-yt.web.app/"
+            href="https://cryptons-app.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -57,7 +61,7 @@ const crypto = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Redux Toolkit
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
@@ -66,7 +70,7 @@ const crypto = () => {
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Coin Gecko API
+                <RiRadioButtonFill className="pr-1" /> Rapidapi API
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Routes
