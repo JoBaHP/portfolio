@@ -5,6 +5,9 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { BiBitcoin } from "react-icons/bi";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { PAYPAL_CLIENT_ID } from "../utils";
+
 // import { useRouter } from 'next/router';
 
 const Navbar = () => {
@@ -78,6 +81,27 @@ const Navbar = () => {
             defer
           ></script>
         </div>
+        {/*         <div className="flex justify-between items-center w-full px-2 2xl:px-16">
+          <PayPalScriptProvider
+            options={{
+              "client-id": PAYPAL_CLIENT_ID.clientId,
+              currency: "USD",
+            }}
+          >
+            <PayPalButtons
+              style={{
+                color: "silver",
+                shape: "pill",
+                tagline: false,
+                layout: "horizontal",
+                fontSize: "24pt",
+                height: 50,
+                containerWidth: "100px",
+              }}
+              className="text-[#5651e5] w-12 p-4  mt-4 font-semibold hover:border-b"
+            />
+          </PayPalScriptProvider>
+        </div> */}
 
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
