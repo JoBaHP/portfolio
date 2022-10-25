@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import Script from "next/script";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -21,8 +22,10 @@ function MyApp({ Component, pageProps }) {
                     });
                 `}
       </Script>
-      <Navbar />
-      <Component {...pageProps} />
+      <ThemeProvider enableSystem={true} attribute="class">
+        <Navbar />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

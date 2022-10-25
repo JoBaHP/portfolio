@@ -4,9 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { BiBitcoin } from "react-icons/bi";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { PAYPAL_CLIENT_ID } from "../utils";
+/* import { BiBitcoin } from "react-icons/bi";*/
 
 // import { useRouter } from 'next/router';
 
@@ -57,8 +55,8 @@ const Navbar = () => {
           : "fixed w-full h-15 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div>
+      <div className="dark:bg-black   flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        {/*         <div>
           <a
             className=" text-[#5651e5] w-12 p-4  mt-4"
             href="https://commerce.coinbase.com/checkout/ebae0c9b-c9da-4c53-a8a1-db2a06fed801"
@@ -80,29 +78,19 @@ const Navbar = () => {
             src="https://commerce.coinbase.com/v1/checkout.js?version=201807"
             defer
           ></script>
-        </div>
-        {/*         <div className="flex justify-between items-center w-full px-2 2xl:px-16">
-          <PayPalScriptProvider
-            options={{
-              "client-id": PAYPAL_CLIENT_ID.clientId,
-              currency: "USD",
-            }}
-          >
-            <PayPalButtons
-              style={{
-                color: "silver",
-                shape: "pill",
-                tagline: false,
-                layout: "horizontal",
-                fontSize: "24pt",
-                height: 50,
-                containerWidth: "100px",
-              }}
-              className="text-[#5651e5] w-12 p-4  mt-4 font-semibold hover:border-b"
-            />
-          </PayPalScriptProvider>
         </div> */}
-
+        <div className=" flex justify-between items-center w-full px-2 2xl:px-16">
+          <div className=" w-12 p-4 ">
+            <Link
+              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=847NTEWVH2JFW"
+              target="_blank"
+            >
+              <p className="text-center py-3 rounded-lg bg-transparent text-gray-700 font-bold text-lg cursor-pointer">
+                Payments
+              </p>
+            </Link>
+          </div>
+        </div>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">
@@ -139,19 +127,21 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav
+            ? "  md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+            : ""
         }
       >
         {/* Side Drawer Menu */}
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "dark:bg-black fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
-            <div className="flex w-full items-left py-0">
+            <div className="flex w-full items-left py-0 dark:bg-black">
               {/*               <Link href="/">
                 <a>
                   <Image src={Logo} width="87" height="35" alt="/" />
@@ -159,12 +149,12 @@ const Navbar = () => {
               </Link> */}
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer "
+                className="dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer "
               >
                 <AiOutlineClose />
               </div>
             </div>
-            {/*             <div className="border-b border-gray-300 my-4">
+            {/* <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
                 Let&#39;s build something legendary together
               </p>
@@ -209,7 +199,7 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                  href="https://www.linkedin.com/in/jovan-raosavljevic/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -218,7 +208,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/fireclint"
+                  href="https://github.com/JoBaHP"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -229,7 +219,7 @@ const Navbar = () => {
                 <Link href="/#contact">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
                     <AiOutlineMail />
                   </div>
@@ -237,7 +227,7 @@ const Navbar = () => {
                 <Link href="/resume">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
                     <BsFillPersonLinesFill />
                   </div>
@@ -252,3 +242,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+/* https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=847NTEWVH2JFW */
