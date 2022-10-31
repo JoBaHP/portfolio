@@ -22,7 +22,12 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-      <ThemeToogle />
+      <ThemeToogle
+        className=" dark:bg-black dark:text-gray-100 w-full h-16 z-20  border-white
+            fixed left-0 bottom-0
+            flex justify-center items-center
+            text-white text-2xl"
+      />
     </div>
   );
 }
