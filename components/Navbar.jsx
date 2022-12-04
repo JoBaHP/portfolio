@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-/* import { BiBitcoin } from "react-icons/bi";*/
+import { BiBitcoin } from "react-icons/bi";
 
 // import { useRouter } from 'next/router';
 
@@ -56,7 +55,7 @@ const Navbar = () => {
       }
     >
       <div className="dark:bg-black   flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        {/*         <div>
+        <div>
           <a
             className=" text-[#5651e5] w-12 p-4  mt-4"
             href="https://commerce.coinbase.com/checkout/ebae0c9b-c9da-4c53-a8a1-db2a06fed801"
@@ -78,8 +77,8 @@ const Navbar = () => {
             src="https://commerce.coinbase.com/v1/checkout.js?version=201807"
             defer
           ></script>
-        </div> */}
-        <div className=" flex justify-between items-center w-full px-2 2xl:px-16">
+        </div>
+        {/*  <div className=" flex justify-between items-center w-full px-2 2xl:px-16">
           <div className=" w-12 p-4 ">
             <Link
               href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=847NTEWVH2JFW"
@@ -90,7 +89,7 @@ const Navbar = () => {
               </p>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">

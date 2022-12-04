@@ -11,10 +11,10 @@ const ThemeToogle = () => {
   return (
     <IconContext.Provider value={{ className: "shared-class", size: 25 }}>
       <button
-        className="    dark:bg-black dark:text-gray-100 w-full h-16 z-20  border-t-2 border-white
-            fixed left-0 bottom-0
-            flex justify-center items-center
-            text-white text-2xl"
+        className="  dark:bg-black dark:text-gray-100 w-16 h-16 z-20   rounded-full py-2 px-5 border-t-2 border-white
+          fixed ml-8 mb-4 bottom-0
+          flex justify-center items-center
+          text-white text-2xl"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         aria-label="Toggle Dark Mode"
       >
