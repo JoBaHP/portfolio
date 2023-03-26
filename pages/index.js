@@ -5,7 +5,6 @@ import About from "../components/About.jsx";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import ThemeToogle from "../context/ThemeToogle";
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-      <ThemeToogle />
     </div>
   );
 }

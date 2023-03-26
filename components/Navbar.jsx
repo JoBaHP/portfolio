@@ -4,6 +4,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { BiBitcoin } from "react-icons/bi";
+import ThemeToogle from "../context/ThemeToogle";
 
 // import { useRouter } from 'next/router';
 
@@ -55,20 +56,16 @@ const Navbar = () => {
       }
     >
       <div className="dark:bg-black   flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        <ThemeToogle />
         <div>
           <a
             className=" text-[#5651e5] w-12 p-4  mt-4"
             href="https://commerce.coinbase.com/checkout/ebae0c9b-c9da-4c53-a8a1-db2a06fed801"
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
+            <div className="flex center">
               <BiBitcoin
                 size={50}
-                className="ml-10 text-sm uppercase hover:border-b"
+                className=" text-sm uppercase hover:border-b"
               />
               <span className="font-semibold">pay</span>
             </div>
@@ -160,6 +157,7 @@ const Navbar = () => {
             </div> */}
           </div>
           <div className="py-4 flex flex-col">
+            .
             <ul className="uppercase">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
