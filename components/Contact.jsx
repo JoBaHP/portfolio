@@ -15,30 +15,57 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [feedback, setFeedback] = useState({ type: "idle", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Update inputs value
   const handleParam = () => (e) => {
     const name = e.target.name;
     const value = e.target.value;
 
+    setFeedback({ type: "idle", message: "" });
     setQuery((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
   // Form Submit function
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setFeedback({ type: "info", message: "Sending your message..." });
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
       formData.append(key, value);
     });
-    fetch("https://getform.io/f/cebb5ba3-4e44-40ec-b268-216f06385b9e", {
-      method: "POST",
-      body: formData,
-    }).then(() =>
-      setQuery({ name: "", email: "", message: "", phone: "", subject: "" })
-    );
+    try {
+      const response = await fetch(
+        "https://getform.io/f/cebb5ba3-4e44-40ec-b268-216f06385b9e",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed: ${response.status}`);
+      }
+
+      setFeedback({
+        type: "success",
+        message: "Thanks for reaching out! I’ll get back to you shortly.",
+      });
+      setQuery({ name: "", email: "", message: "", phone: "", subject: "" });
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+      setFeedback({
+        type: "error",
+        message:
+          "Something went wrong while sending your message. Please try again or email me at jovan@build-up.us.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -116,7 +143,6 @@ const Contact = () => {
                 onSubmit={formSubmit}
                 method="POST"
                 encType="multipart/form-data"
-                target="_blank"
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
@@ -181,9 +207,28 @@ const Contact = () => {
                     onChange={handleParam()}
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
+                <button
+                  type="submit"
+                  className="w-full p-4 text-gray-100 mt-4 disabled:cursor-not-allowed disabled:opacity-70"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
+                {feedback.type !== "idle" && (
+                  <div
+                    className={`mt-4 rounded-xl border p-4 text-sm font-medium ${
+                      feedback.type === "success"
+                        ? "border-emerald-500 bg-emerald-500/10 text-emerald-700 dark:border-emerald-400 dark:text-emerald-200"
+                        : feedback.type === "error"
+                        ? "border-rose-500 bg-rose-500/10 text-rose-700 dark:border-rose-400 dark:text-rose-200"
+                        : "border-indigo-500 bg-indigo-500/10 text-indigo-700 dark:border-indigo-400 dark:text-indigo-200"
+                    }`}
+                    role="status"
+                    aria-live="polite"
+                  >
+                    {feedback.message}
+                  </div>
+                )}
               </form>
             </div>
           </div>
