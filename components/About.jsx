@@ -16,20 +16,22 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600 dark:text-gray-300">
-            / / A software engineer, lifelong learner, language enthusiast and
-            sports fan
+            / / Software engineer, lifelong learner, language enthusiast, and sports fan
           </p>
           <p className="py-2 text-gray-600 dark:text-gray-300">
-            For the past 3+ years I’ve been focused on ServiceNow development —
-            building, customizing, and integrating solutions across ITSM and
-            related modules. I work with Business Rules, Client Scripts, Script
-            Includes, UI Policies/Actions, Flow Designer, Catalog Items, and
-            REST/SOAP integrations, following platform best practices.
+            For the past 3+ years I’ve been a ServiceNow developer — building,
+            customizing, and integrating solutions across ITSM and related
+            modules. I work with GlideRecord, AngularJS Service Portal widgets,
+            Flow Designer, IntegrationHub, Business Rules, Client Scripts, Script
+            Includes, UI Policies/Actions, Catalog Items, and REST/SOAP
+            integrations, keeping implementations aligned with platform best
+            practices.
           </p>
           <p className="py-2 text-gray-600 dark:text-gray-300">
-            I’m a Certified ServiceNow System Administrator (CSA) with a strong
-            focus on Service Portal development: custom widgets, theming, Catalog
-            integrations, and secure authentication experiences.
+            I hold multiple ServiceNow certifications, including Certified System
+            Administrator (CSA) and Certified Application Specialist credentials,
+            and I stay current with release upgrades to deliver maintainable,
+            secure solutions.
           </p>
           <p className="py-2 text-gray-600 dark:text-gray-300">
             I have spent the last 10 years as a sports professional working for
@@ -40,12 +42,12 @@ const About = () => {
             love for programming.
           </p>
           <p className="py-2 text-gray-600 dark:text-gray-300">
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning Java but later on I was even more
-            enthused with making websites interactive, so JavaScript was the
-            natural choice. I then started freelancing for different kinds of
-            companies. I am now spending my time building projects with React,
-            Firebase, and learning new technologies.
+            Fascinated with how intricate programming can be, I was quickly drawn
+            to learn more. I started with Java fundamentals, then gravitated
+            toward building interactive interfaces with JavaScript. Freelance
+            projects across different industries followed, and today I spend my
+            time creating experiences with React, Next.js, Firebase, and the
+            ServiceNow platform while always learning what’s next.
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 dark:text-gray-300 underline cursor-pointer">

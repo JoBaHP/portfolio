@@ -30,7 +30,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image
                   src={ServiceNowIcon}
                   width={64}
@@ -45,7 +45,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={Html} width={64} height={64} alt="HTML and CSS" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -55,7 +55,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={Javascript} width={64} height={64} alt="JavaScript" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -65,7 +65,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={ReactImg} width={64} height={64} alt="React" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -75,7 +75,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={Github} width={64} height={64} alt="GitHub" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -85,7 +85,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={Node} width={64} height={64} alt="Node.js" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -95,7 +95,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={Firebase} width={64} height={64} alt="Firebase" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -105,7 +105,7 @@ const Skills = () => {
           </div>
           <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={Mongo} width={64} height={64} alt="MongoDB" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -113,9 +113,9 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={AWS} width={64} height={64} alt="AWS" />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -123,9 +123,9 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
                 <Image src={NextJS} width={64} height={64} alt="Next.js" />
               </div>
               <div className="flex flex-col items-center justify-center">
