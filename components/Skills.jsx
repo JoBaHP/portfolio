@@ -10,6 +10,8 @@ import Firebase from "../public/assets/skills/firebase.png";
 import NextJS from "../public/assets/skills/nextjs.png";
 import AWS from "../public/assets/skills/aws.png";
 import ServiceNowIcon from "../public/assets/skills/servicenow.svg";
+import TailwindImg from "../public/assets/skills/tailwind.png";
+import AngularIcon from "../public/assets/skills/angularjs.svg";
 
 const Skills = () => {
   return (
@@ -40,6 +42,21 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>ServiceNow</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
+                <Image
+                  src={AngularIcon}
+                  width={64}
+                  height={64}
+                  alt="AngularJS Service Portal"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>AngularJS</h3>
               </div>
             </div>
           </div>
@@ -110,6 +127,16 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>MongoDB</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl bg-white dark:bg-[#111827] hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto flex h-16 w-16 items-center justify-center rounded-full bg-white dark:bg-gray-100">
+                <Image src={TailwindImg} width={64} height={64} alt="Tailwind CSS" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Tailwind CSS</h3>
               </div>
             </div>
           </div>
