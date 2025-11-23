@@ -4,7 +4,7 @@ import agencyImg from "../public/assets/projects/agency.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const netflix = () => {
+const Agency = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -75,4 +75,4 @@ const netflix = () => {
   );
 };
 
-export default netflix;
+export default Agency;

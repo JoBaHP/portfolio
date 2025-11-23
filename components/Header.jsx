@@ -3,7 +3,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Typewriter from "typewriter-effect";
+
 
 const Header = () => {
   return (
@@ -13,31 +13,11 @@ const Header = () => {
           {/* <p className="uppercase text-sm tracking-widest text-gray-600">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p> */}
-          <h1 className="py-15 pt-8 text-gray-700">
-            Hi, I&#39;m{" "}
-            <span className="text-[#5651e5]">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Jovan <br> ServiceNow & Full‑Stack Developer",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  pauseFor: 2500,
-                }}
-              />
-            </span>
-            {/*    <span className="text-[#5651e5]"> Jovan</span> */}
+          <h1 className="py-4 text-gray-700 dark:text-gray-200">
+            Hi, I&#39;m <span className="text-[#5651e5]">Jovan</span>
           </h1>
-          <h1 className="py-2 text-gray-700">
-            {/*             <Typewriter
-              options={{
-                strings: ["A Full-Stack Web Developer"],
-                autoStart: true,
-                loop: true,
-                pauseFor: 2500,
-              }}
-            /> */}
+          <h1 className="py-2 text-gray-700 dark:text-gray-200 animate-fade-in-up">
+            ServiceNow & Full‑Stack Developer
           </h1>
           {/* <h1 className="py-2 text-gray-700"></h1> */}
           <p className="py-4 text-gray-600 dark:text-gray-300 sm:max-w-[70%] m-auto">

@@ -46,9 +46,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full h-20 z-[100] transition-colors duration-300 bg-[#ecf0f3] dark:bg-[#050505] ${
-        shadow ? "shadow-xl" : ""
-      }`}
+      className={`fixed w-full h-20 z-[100] transition-colors duration-300 ease-in-out bg-[#ecf0f3] dark:bg-[#050505] ${shadow ? "shadow-xl" : ""
+        }`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 text-[#1f2937] dark:text-gray-100">
         <ThemeToogle />
@@ -153,54 +152,42 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
 
             <ul className="uppercase">
-              <Link href="/">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
-                >
-                  Home
-                </li>
-              </Link>
-              <Link href="/#about">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
-                >
-                  About
-                </li>
-              </Link>
-              <Link href="/#skills">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
-                >
-                  Skills
-                </li>
-              </Link>
-              <Link href="/#projects">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
-                >
-                  Projects
-                </li>
-              </Link>
-              <Link href="/resume">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
-                >
-                  Resume
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
-                >
-                  Contact
-                </li>
-              </Link>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
+              >
+                <Link href="/">Home</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
+              >
+                <Link href="/#about">About</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
+              >
+                <Link href="/#skills">Skills</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
+              >
+                <Link href="/#projects">Projects</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
+              >
+                <Link href="/resume">Resume</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#1f2937] dark:text-gray-100"
+              >
+                <Link href="/#contact">Contact</Link>
+              </li>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">

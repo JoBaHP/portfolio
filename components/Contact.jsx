@@ -150,7 +150,7 @@ const Contact = () => {
                       Name
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100 focus:outline-none focus:border-[#5651e5] focus:ring-1 focus:ring-[#5651e5] transition-colors"
                       type="text"
                       name="name"
                       value={query.name}
@@ -163,7 +163,7 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100 focus:outline-none focus:border-[#5651e5] focus:ring-1 focus:ring-[#5651e5] transition-colors"
                       type="text"
                       name="phone"
                       value={query.phone}
@@ -200,7 +200,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
-                    className="border-2 rounded-lg p-3 border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100"
+                    className="border-2 rounded-lg p-3 border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100 focus:outline-none focus:border-[#5651e5] focus:ring-1 focus:ring-[#5651e5] transition-colors"
                     rows="10"
                     name="message"
                     value={query.message}
@@ -216,13 +216,12 @@ const Contact = () => {
                 </button>
                 {feedback.type !== "idle" && (
                   <div
-                    className={`mt-4 rounded-xl border p-4 text-sm font-medium ${
-                      feedback.type === "success"
-                        ? "border-emerald-500 bg-emerald-500/10 text-emerald-700 dark:border-emerald-400 dark:text-emerald-200"
-                        : feedback.type === "error"
+                    className={`mt-4 rounded-xl border p-4 text-sm font-medium ${feedback.type === "success"
+                      ? "border-emerald-500 bg-emerald-500/10 text-emerald-700 dark:border-emerald-400 dark:text-emerald-200"
+                      : feedback.type === "error"
                         ? "border-rose-500 bg-rose-500/10 text-rose-700 dark:border-rose-400 dark:text-rose-200"
                         : "border-indigo-500 bg-indigo-500/10 text-indigo-700 dark:border-indigo-400 dark:text-indigo-200"
-                    }`}
+                      }`}
                     role="status"
                     aria-live="polite"
                   >
@@ -237,10 +236,10 @@ const Contact = () => {
           <Link href="/">
 
             <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-700 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp
-                  className="text-[#5651e5]"
-                  size={50}
-                />
+              <HiOutlineChevronDoubleUp
+                className="text-[#5651e5]"
+                size={50}
+              />
             </div>
 
           </Link>

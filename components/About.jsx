@@ -60,8 +60,8 @@ const About = () => {
             src="/assets/personal.jpg"
             alt="Picture of the author"
             className="rounded-xl"
-            width="400"
-            height="400"
+            width={400}
+            height={400}
           />
         </div>
       </div>
