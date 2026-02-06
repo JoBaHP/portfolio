@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-/* import contact from "../public/assets/1.jpg"; */
 
 const Contact = () => {
   const [query, setQuery] = useState({
@@ -164,7 +163,7 @@ const Contact = () => {
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100 focus:outline-none focus:border-[#5651e5] focus:ring-1 focus:ring-[#5651e5] transition-colors"
-                      type="text"
+                      type="tel"
                       name="phone"
                       value={query.phone}
                       onChange={handleParam()}
@@ -176,10 +175,11 @@ const Contact = () => {
                     Email
                   </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100 focus:outline-none focus:border-[#5651e5] focus:ring-1 focus:ring-[#5651e5] transition-colors"
                     type="email"
                     name="email"
                     value={query.email}
+                    required
                     onChange={handleParam()}
                   />
                 </div>
@@ -188,7 +188,7 @@ const Contact = () => {
                     Subject
                   </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-700 dark:bg-[#0f172a] dark:text-gray-100 focus:outline-none focus:border-[#5651e5] focus:ring-1 focus:ring-[#5651e5] transition-colors"
                     type="text"
                     name="subject"
                     value={query.subject}
@@ -204,6 +204,7 @@ const Contact = () => {
                     rows="10"
                     name="message"
                     value={query.message}
+                    required
                     onChange={handleParam()}
                   ></textarea>
                 </div>

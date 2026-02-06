@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import Html from "../public/assets/skills/html.png";
 import Mongo from "../public/assets/skills/mongo.png";
 import Javascript from "../public/assets/skills/javascript.png";

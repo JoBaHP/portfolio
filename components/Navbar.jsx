@@ -1,33 +1,14 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { BiBitcoin } from "react-icons/bi";
 import ThemeToogle from "../context/ThemeToogle";
 
-// import { useRouter } from 'next/router';
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -69,18 +50,6 @@ const Navbar = () => {
             defer
           ></script>
         </div>
-        {/*  <div className=" flex justify-between items-center w-full px-2 2xl:px-16">
-          <div className=" w-12 p-4 ">
-            <Link
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=847NTEWVH2JFW"
-              target="_blank"
-            >
-              <p className="text-center py-3 rounded-lg bg-transparent text-gray-700 font-bold text-lg cursor-pointer">
-                Payments
-              </p>
-            </Link>
-          </div>
-        </div> */}
         <div>
           <ul className="hidden md:flex items-center gap-4 text-sm uppercase">
             <li className="ml-10 text-sm uppercase hover:border-b text-[#1f2937] dark:text-gray-100">
@@ -131,11 +100,6 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-left py-0">
-              {/*               <Link href="/">
-                <a>
-                  <Image src={Logo} width="87" height="35" alt="/" />
-                </a>
-              </Link> */}
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-700 p-3 cursor-pointer"
@@ -143,11 +107,6 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            {/* <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Let&#39;s build something legendary together
-              </p>
-            </div> */}
           </div>
           <div className="py-4 flex flex-col">
 
@@ -238,4 +197,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-/* https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=847NTEWVH2JFW */

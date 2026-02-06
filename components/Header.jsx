@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -10,16 +9,12 @@ const Header = () => {
     <div id="home" className=" dark:bg-black w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          {/* <p className="uppercase text-sm tracking-widest text-gray-600">
-            LET&#39;S BUILD SOMETHING TOGETHER
-          </p> */}
           <h1 className="py-4 text-gray-700 dark:text-gray-200">
             Hi, I&#39;m <span className="text-[#5651e5]">Jovan</span>
           </h1>
           <h1 className="py-2 text-gray-700 dark:text-gray-200 animate-fade-in-up">
             ServiceNow & Full‑Stack Developer
           </h1>
-          {/* <h1 className="py-2 text-gray-700"></h1> */}
           <p className="py-4 text-gray-600 dark:text-gray-300 sm:max-w-[70%] m-auto">
             Full‑time ServiceNow developer (3+ years). Building full‑stack web
             applications and websites in my free time.

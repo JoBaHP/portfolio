@@ -1,7 +1,5 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-/* import profilePic from "../public/assets/personal.jpg"; */
 
 const About = () => {
   return (
@@ -49,13 +47,13 @@ const About = () => {
             time creating experiences with React, Next.js, Firebase, and the
             ServiceNow platform while always learning what’s next.
           </p>
-          <Link href="/#projects">
+          <Link href="/#projects" aria-label="Navigate to projects section">
             <p className="py-2 text-gray-600 dark:text-gray-300 underline cursor-pointer">
               Check out some of my latest projects.
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 dark:shadow-gray-700 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             src="/assets/personal.jpg"
             alt="Picture of the author"
