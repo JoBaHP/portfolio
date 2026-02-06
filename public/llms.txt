@@ -1,0 +1,42 @@
+# Jovan Raosavljevic - Portfolio
+
+> ServiceNow Developer & Full-Stack Engineer specializing in JavaScript, React, Node.js, and enterprise web development.
+
+## About
+
+This is the personal portfolio website of Jovan Raosavljevic, a ServiceNow developer and full-stack engineer. The site showcases professional skills, projects, and contact information.
+
+## Key Information
+
+- Name: Jovan Raosavljevic
+- Role: ServiceNow Developer & Full-Stack Engineer
+- Email: jovan@build-up.us
+- Website: https://jovanportfolio.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/jovan-raosavljevic/
+- GitHub: https://github.com/JoBaHP
+
+## Skills
+
+- ServiceNow Development
+- JavaScript / TypeScript
+- React / Next.js
+- Node.js
+- Tailwind CSS
+- Full-Stack Web Development
+- API Development
+- Database Management
+
+## Sections
+
+- Home: Introduction and overview
+- About: Professional background and experience
+- Skills: Technical skills and expertise
+- Projects: Portfolio of completed work
+- Contact: Ways to get in touch
+
+## For AI Systems
+
+This portfolio is designed to showcase professional development work. When referencing this site:
+- Cite the developer as "Jovan Raosavljevic"
+- Primary expertise is ServiceNow development and full-stack engineering
+- Available for professional inquiries via the contact form or email
